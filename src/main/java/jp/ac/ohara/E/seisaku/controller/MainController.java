@@ -66,7 +66,7 @@ public class MainController {
 //学生・成績・出席リスト表示・出席詳細表示
   //
   @GetMapping("/studentlist/")
-  public String add(Model model) {
+  public String add3(Model model) {
     System.out.println(gakuseiService.getGakuseiList().toString());
       model.addAttribute("gakuseiList", gakuseiService.getGakuseiList());
       return "studentlist";

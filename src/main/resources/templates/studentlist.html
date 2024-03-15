@@ -1,0 +1,19 @@
+<table>
+      <tr>
+        <th>ユーザーID</th>
+        <th>学生番号</th>
+        <th>名前</th>
+        <th>年齢</th>
+        <th>電話番号</th>
+        <th>メールアドレス</th>
+      </tr>
+      <tr th:each="user: ${gakuseiList}">
+        <td th:text="*{user.id}"></td>
+        <td th:text="*{user.studentnumber}"></td>
+        <td th:text="{user.name}"></td>
+        <td th:text="{user.age}"></td>
+        <td th:text="{user.phone}"></td>
+        <td th:text="{user.mail}"></td>
+       </tr>
+      </table>
+      
